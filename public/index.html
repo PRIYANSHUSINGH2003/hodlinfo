@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HODLINFO</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1 style="color:aqua;">HODLINFO</h1>
+            <div class="button-group">
+                <button class="currency-button">INR</button>
+                <button class="currency-button">BTC</button>
+                <button class="currency-button">ETH</button>
+            </div>
+            <button class="telegram-button" style="background-color: aqua; font-weight: bold;">Connect Telegram</button>
+        </div>
+    </header>
+    <div class="info-section">
+        <div class="info-item">
+            <div class="info-card min-price">
+                <span class="info-value" style="color:aqua;">₹0</span>
+                <span class="info-label">Min</span>
+            </div>
+            <div class="info-card high-price">
+                <span class="info-value" style="color:aqua;">₹0</span>
+                <span class="info-label">High</span>
+            </div>
+            <div class="info-card best-price">
+                <span class="info-label" style="font-size: 0.84rem; color: darkgray;">Best Price Trade</span>
+                <span class="info-value">₹0</span>
+                <span class="info-description">Average of BTC/INR not a price commission</span>
+            </div>
+            <div class="info-card one-day-price">
+                <span class="info-value" style="color:aqua;">₹0</span>
+                <span class="info-label">1 Day</span>
+            </div>
+            <div class="info-card seven-day-price">
+                <span class="info-value" style="color:aqua;">₹0</span>
+                <span class="info-label">7 Day</span>
+            </div>
+        </div>
+    </div>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th style="color: darkgray;">#</th>
+                    <th style="color: darkgray;">Platform</th>
+                    <th style="color: darkgray;">Last Traded Price</th>
+                    <th style="color: darkgray;">Buy/Sell Price</th>
+                    <th style="color: darkgray;">Difference</th>
+                    <th style="color: darkgray;">Savings</th>
+                </tr>
+            </thead>
+            <tbody id="ticker-table">
+                <!-- Data will be inserted here -->
+            </tbody>
+        </table>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
